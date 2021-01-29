@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\adler\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\adler\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Le-Monke-GGJ.1603484451.00" t="ExcludeRecursive" />
+    <e p="D:\UnityProjects\Le-Monke-GGJ" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="MetroidvaniaController" t="Include">
+          <e p="Animation" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="EndParamBehaviour.cs" t="Include" />
+              <e p="JumpStateBehaviour.cs" t="Include" />
+              <e p="PlaySoundBehaviour.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Enemies" t="Include">
+              <e p="Ally.cs" t="Include" />
+              <e p="Enemy.cs" t="Include" />
+              <e p="ThrowableProjectile.cs" t="Include" />
+            </e>
+            <e p="Environment" t="Include">
+              <e p="DestructibleObject.cs" t="Include" />
+              <e p="Grass.cs" t="Include" />
+            </e>
+            <e p="KillZone.cs" t="Include" />
+            <e p="Player" t="Include">
+              <e p="Attack.cs" t="Include" />
+              <e p="CameraFollow.cs" t="Include" />
+              <e p="CharacterController2D.cs" t="Include" />
+              <e p="PlayerMovement.cs" t="Include" />
+              <e p="ThrowableWeapon.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="SimpleCameraController.cs" t="Include" />
+        </e>
+        <e p="Tiles" t="Include">
+          <e p="warped city files" t="Include">
+            <e p="public-license.txt" t="Include" />
+          </e>
+        </e>
+        <e p="TutorialInfo" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ReadmeEditor.cs" t="Include" />
+            </e>
+            <e p="Readme.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Le-Monke-GGJ.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
