@@ -8,9 +8,17 @@ public class ThrowableProjectile : MonoBehaviour
 	public bool hasHit = false;
 	public float speed = 15f;
 	public GameObject owner;
+	public float timeDestruction = 5.0f;
 
-    // Update is called once per frame
-    void FixedUpdate()
+
+	// Update is called once per frame
+
+	void Start()
+	{
+		StartCoroutine(GetDestroyAfterTime(timeDestruction));
+	}
+
+	void FixedUpdate()
     {
 		if ( !hasHit)
 		GetComponent<Rigidbody2D>().velocity = direction * speed;
@@ -32,5 +40,11 @@ public class ThrowableProjectile : MonoBehaviour
 		{
 			Destroy(gameObject);
 		}
+	}
+
+	IEnumerator GetDestroyAfterTime(float time)
+	{
+		yield return new WaitForSeconds(time);
+		Destroy(gameObject);
 	}
 }
