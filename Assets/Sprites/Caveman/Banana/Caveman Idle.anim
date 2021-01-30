@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Run
+  m_Name: Caveman Idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,18 +20,14 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 1269686544916135197, guid: a87abd260c494e643a26e32fecdde744, type: 3}
-    - time: 0.5
-      value: {fileID: -178031443155197292, guid: a87abd260c494e643a26e32fecdde744, type: 3}
-    - time: 1
-      value: {fileID: 8639784207923724166, guid: a87abd260c494e643a26e32fecdde744, type: 3}
-    - time: 1.5
-      value: {fileID: -178031443155197292, guid: a87abd260c494e643a26e32fecdde744, type: 3}
+      value: {fileID: 2375933450902273582, guid: 1d3dcc10a021a1d41a7c6c6f3635e48d, type: 3}
+    - time: 0.2
+      value: {fileID: -6930456640003108528, guid: 1d3dcc10a021a1d41a7c6c6f3635e48d, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 2
+  m_SampleRate: 5
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -46,16 +42,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 1269686544916135197, guid: a87abd260c494e643a26e32fecdde744, type: 3}
-    - {fileID: -178031443155197292, guid: a87abd260c494e643a26e32fecdde744, type: 3}
-    - {fileID: 8639784207923724166, guid: a87abd260c494e643a26e32fecdde744, type: 3}
-    - {fileID: -178031443155197292, guid: a87abd260c494e643a26e32fecdde744, type: 3}
+    - {fileID: 2375933450902273582, guid: 1d3dcc10a021a1d41a7c6c6f3635e48d, type: 3}
+    - {fileID: -6930456640003108528, guid: 1d3dcc10a021a1d41a7c6c6f3635e48d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2
+    m_StopTime: 0.4
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

@@ -5,6 +5,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
 	public CharacterController2D controller;
+	public AnimatorOverrideController Caveman;
+	public AnimatorOverrideController AlmostMonke;
+
+
 	public Animator animator;
 
 	public float runSpeed = 40f;
@@ -12,6 +16,8 @@ public class PlayerMovement : MonoBehaviour {
 	float horizontalMove = 0f;
 	bool jump = false;
 	bool dash = false;
+
+	public bool isCaveman = false;
 
 	//bool dashAxis = false;
 	
@@ -22,7 +28,7 @@ public class PlayerMovement : MonoBehaviour {
 
 		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-		if (Input.GetButtonDown("Jump"))
+		if (Input.GetButtonDown("Jump") && isCaveman)
 		{
 			jump = true;
 		}
@@ -65,4 +71,26 @@ public class PlayerMovement : MonoBehaviour {
 		jump = false;
 		dash = false;
 	}
+
+	void OnTriggerEnter2D(Collider2D collision)
+    {
+		if(collision.gameObject.CompareTag("Banana 1"))
+        {
+			SwaptoCaveman();
+			runSpeed = 30.0f;
+        }
+		else if(collision.gameObject.CompareTag("Banana 2"))
+        {
+			GetComponent<Animator>().runtimeAnimatorController = AlmostMonke;
+			Destroy(collision.gameObject);
+
+		}
+	}
+
+	void SwaptoCaveman()
+	{
+		GetComponent<Animator>().runtimeAnimatorController = Caveman;
+		isCaveman = true;
+	}
+
 }
