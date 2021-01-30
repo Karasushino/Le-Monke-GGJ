@@ -82,8 +82,7 @@ public class PlayerMovement : MonoBehaviour {
 		else if(collision.gameObject.CompareTag("Banana 2"))
         {
 			GetComponent<Animator>().runtimeAnimatorController = AlmostMonke;
-			Destroy(collision.gameObject);
-
+			CharacterController2D.isHairy = true;
 		}
 	}
 

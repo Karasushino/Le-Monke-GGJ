@@ -87,6 +87,7 @@ public class Attack : MonoBehaviour
         else if(collision.gameObject.CompareTag("Banana 2"))
         {
             isAlmostMonke = true;
+            Destroy(collision.gameObject);
 
             Debug.Log("Banana 2 collided");
 

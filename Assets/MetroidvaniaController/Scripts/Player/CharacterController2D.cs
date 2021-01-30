@@ -41,8 +41,8 @@ public class CharacterController2D : MonoBehaviour
 	private float jumpWallDistX = 0; //Distance between player and wall
 	private bool limitVelOnWallJump = false; //For limit wall jump distance with low fps
 
-	[Header("Stage Settings")]
-	public bool isHairy = false;
+	//[Header("Stage Settings")]
+	static public bool isHairy = false;
 
 	[Header("Events")]
 	[Space]
@@ -351,4 +351,7 @@ public class CharacterController2D : MonoBehaviour
 		yield return new WaitForSeconds(1.1f);
 		SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
 	}
+
+
+
 }
