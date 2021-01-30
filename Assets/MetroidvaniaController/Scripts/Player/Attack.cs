@@ -12,6 +12,7 @@ public class Attack : MonoBehaviour
 	public bool canAttack = true;
 	public bool isTimeToCheck = false;
 
+
 	public GameObject cam;
 
 	private void Awake()
@@ -66,5 +67,16 @@ public class Attack : MonoBehaviour
 				cam.GetComponent<CameraFollow>().ShakeCamera();
 			}
 		}
+	}
+
+	public void OnTriggerEnter2D(Collider2D collision)
+	{
+		if(collision.gameObject.CompareTag("Banana 1"))
+        {
+            canAttack = true;
+			Debug.Log("Banana 1 collided");
+			Destroy(collision.gameObject);
+        }
+
 	}
 }
