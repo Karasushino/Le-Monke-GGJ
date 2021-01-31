@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour {
 	public bool isInvincible = false;
 	private bool isHitted = false;
 
+	public AudioSource bonk;
+
 	void Awake () {
 		fallCheck = transform.Find("FallCheck");
 		wallCheck = transform.Find("WallCheck");
@@ -68,6 +70,7 @@ public class Enemy : MonoBehaviour {
 	public void ApplyDamage(float damage) {
 		if (!isInvincible) 
 		{
+			bonk.Play();
 			float direction = damage / Mathf.Abs(damage);
 			damage = Mathf.Abs(damage);
 			transform.GetComponent<Animator>().SetBool("Hit", true);
