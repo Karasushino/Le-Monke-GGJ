@@ -18,15 +18,7 @@ public class playMusic : MonoBehaviour
     public GameObject jungleTrigger;
 
 
-    private void Update()
-    {
-        
-
-
-
-
-    }
-
+    
 
 
 

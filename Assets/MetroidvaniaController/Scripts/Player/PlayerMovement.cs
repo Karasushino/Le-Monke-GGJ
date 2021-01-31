@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour {
 
 
 	public Animator animator;
+	public AudioSource Return;
 
 	public float runSpeed = 40f;
 
@@ -21,17 +22,29 @@ public class PlayerMovement : MonoBehaviour {
 
 	public bool isCaveman = false;
 	public bool isLeMonke = false;
-
+	public bool once = false;
 	//bool dashAxis = false;
 	
 	// Update is called once per frame
 	void Update () {
 
+		if(Input.GetKeyDown(KeyCode.Escape))
+        {
+			Application.Quit();
+        }
+
         if (isLeMonke)
 		{
+			if (!once)
+            {
+				Return.Play();
+				once = true;
+			}
+				
+
 			horizontalMove = 0f;
 				return;
-			 }
+		}
 
 
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
