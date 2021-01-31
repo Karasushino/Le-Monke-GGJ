@@ -4,8 +4,8 @@
     <list default="true" id="ea6a66d7-83dd-40dc-970f-778e6ae66c86" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Le-Monke-GGJ/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Le-Monke-GGJ/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Le-Monke-GGJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Le-Monke-GGJ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dani scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dani scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BombController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BombController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +18,9 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/PlayerMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/Attack.cs" />
       <option value="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/ThrowableWeapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/Attack.cs" />
+      <option value="$PROJECT_DIR$/Assets/BombTimer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BombController.cs" />
     </changedPaths>
   </component>
@@ -75,6 +76,7 @@
       <workItem from="1612038545302" duration="289000" />
       <workItem from="1612095051699" duration="14000" />
       <workItem from="1612095603131" duration="33000" />
+      <workItem from="1612097067925" duration="1728000" />
     </task>
     <servers />
   </component>
