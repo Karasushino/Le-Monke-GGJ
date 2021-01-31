@@ -214,7 +214,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1516778740484128, guid: 2804c43b134ed304790a7c95ba388485, type: 3}
       propertyPath: m_Name
-      value: EnemyAI
+      value: Police AI
       objectReference: {fileID: 0}
     - target: {fileID: 4633865963506118, guid: 2804c43b134ed304790a7c95ba388485, type: 3}
       propertyPath: m_RootOrder

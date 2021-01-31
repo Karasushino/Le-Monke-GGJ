@@ -33,7 +33,10 @@ public class Ally : MonoBehaviour
 	private float randomDecision = 0;
 	private bool doOnceDecision = true;
 	private bool endDecision = false;
-	private Animator anim;
+    private Animator anim;
+
+	public static bool isPlayerInRange = false;
+
 
 	void Awake()
 	{
@@ -53,6 +56,14 @@ public class Ally : MonoBehaviour
 
 		else if (enemy != null) 
 		{
+			if (!isPlayerInRange)
+            {
+				anim.SetBool("IsWaiting", true);
+				GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0f);
+
+				return;
+			}
+				
 			if (isDashing)
 			{
 				m_Rigidbody2D.velocity = new Vector2(transform.localScale.x * m_DashForce, 0);
