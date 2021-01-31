@@ -193,7 +193,7 @@ public class CharacterController2D : MonoBehaviour
 				animator.SetBool("IsDoubleJumping", true);
 			}
 
-			else if (m_IsWall && !m_Grounded)
+			else if (m_IsWall && !m_Grounded && isHairy)
 			{
 				if (!oldWallSlidding && m_Rigidbody2D.velocity.y < 0 || isDashing)
 				{
