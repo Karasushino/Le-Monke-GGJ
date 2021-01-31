@@ -16,6 +16,8 @@ public class Attack : MonoBehaviour
     public bool isAlmostMonke = false;
 
     public bool isMonkey = false;
+    public bool isLEMONKE = false;
+
 
     public GameObject cam;
 
@@ -33,6 +35,9 @@ public class Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isLEMONKE)
+            return;
+
         //Melee attack
         if (!isMonkey)
         {
@@ -102,7 +107,7 @@ public class Attack : MonoBehaviour
             canAttack = true;
             Debug.Log("Banana 1 collided");
         }
-        else if(collision.gameObject.CompareTag("Banana 2"))
+        else if (collision.gameObject.CompareTag("Banana 2"))
         {
             isAlmostMonke = true;
             Destroy(collision.gameObject);
@@ -116,6 +121,14 @@ public class Attack : MonoBehaviour
             Destroy(collision.gameObject);
 
             Debug.Log("Banana 3 collided");
+
+        }
+        else if (collision.gameObject.CompareTag("Banana 4"))
+        {
+            isLEMONKE = true;
+            Destroy(collision.gameObject);
+
+            Debug.Log("Banana 4 collided");
 
         }
     }

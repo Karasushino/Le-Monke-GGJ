@@ -11,6 +11,7 @@ TagManager:
   - Banana 3
   - DestructibleObject
   - Projectile
+  - Banana 4
   layers:
   - Default
   - TransparentFX

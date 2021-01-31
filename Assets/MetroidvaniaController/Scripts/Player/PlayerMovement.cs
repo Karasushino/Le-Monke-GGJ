@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour {
 	public AnimatorOverrideController Caveman;
 	public AnimatorOverrideController AlmostMonke;
 	public AnimatorOverrideController Monke;
+	public AnimatorOverrideController LEMonke;
 
 
 	public Animator animator;
@@ -19,11 +20,19 @@ public class PlayerMovement : MonoBehaviour {
 	bool dash = false;
 
 	public bool isCaveman = false;
+	public bool isLeMonke = false;
 
 	//bool dashAxis = false;
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (isLeMonke)
+		{
+			horizontalMove = 0f;
+				return;
+			 }
+
 
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
@@ -89,6 +98,11 @@ public class PlayerMovement : MonoBehaviour {
         {
 			GetComponent<Animator>().runtimeAnimatorController = Monke;
 
+		}
+		else if (collision.gameObject.CompareTag("Banana 4"))
+		{
+			GetComponent<Animator>().runtimeAnimatorController = LEMonke;
+			isLeMonke = true;
 		}
 	}
 
