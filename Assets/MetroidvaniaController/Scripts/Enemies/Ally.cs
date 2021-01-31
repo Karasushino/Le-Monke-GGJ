@@ -35,14 +35,15 @@ public class Ally : MonoBehaviour
 	private bool endDecision = false;
     private Animator anim;
 
-	public static bool isPlayerInRange = false;
+	public bool isPlayerInRange = false;
 
 
 	void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 		attackCheck = transform.Find("AttackCheck").transform;
-		anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
+		enemy = GameObject.Find("DrawPlayer");
 	}
 
 	// Update is called once per frame

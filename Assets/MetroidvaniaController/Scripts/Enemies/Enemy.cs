@@ -76,7 +76,7 @@ public class Enemy : MonoBehaviour {
 			transform.GetComponent<Animator>().SetBool("Hit", true);
 			life -= damage;
 			rb.velocity = Vector2.zero;
-			rb.AddForce(new Vector2(direction * 500f, 100f));
+			rb.AddForce(new Vector2(direction * 1000f, 200f));
 			StartCoroutine(HitTime());
 		}
 	}

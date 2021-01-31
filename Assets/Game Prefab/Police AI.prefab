@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cdefe64be6ae344e87a8426ec7cfbf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AllyScript: {fileID: 6412838367725688241}
 --- !u!50 &6443342584086113091
 Rigidbody2D:
   serializedVersion: 4
@@ -259,12 +260,13 @@ MonoBehaviour:
   life: 15
   speed: 5
   isInvincible: 0
-  m_DashForce: 25
+  m_DashForce: 0
   enemy: {fileID: 0}
   meleeDist: 1.5
   rangeDist: 5
   dmgValue: 4
   throwableObject: {fileID: 5532974359214069763, guid: c928b20c45c6dcd458c1b9a8c6226d54, type: 3}
+  isPlayerInRange: 0
 --- !u!212 &6602131687337958355
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -304,7 +306,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -7422163477388011019, guid: c18c5e103a159f34696435271be1c327, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1

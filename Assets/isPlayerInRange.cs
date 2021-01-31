@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class isPlayerInRange : MonoBehaviour
 {
+    public Ally AllyScript;
+    private bool once = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Ally.isPlayerInRange = true;
-            Debug.Log("Player in range");
+           
+                AllyScript.isPlayerInRange = true;
+                Debug.Log("Player in range");
+              
+            
+
 
         }
     }
@@ -18,8 +24,13 @@ public class isPlayerInRange : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Ally.isPlayerInRange = false;
-            Debug.Log("Player out range");
+          
+                AllyScript.isPlayerInRange = false;
+                Debug.Log("Player out range");
+          
+
+       
+
 
         }
 
