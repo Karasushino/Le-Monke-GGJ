@@ -5,26 +5,21 @@ using UnityEngine;
 
 public class BombController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float timeBeforeDestroy = 1.0f;
+    AudioSource bombSound;
+    private void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Destroy(gameObject.transform.parent.gameObject, timeBeforeDestroy);
+        bombSound = gameObject.GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("DestructibleObject"))
         {
-            /*
-             *other.gameObject.Script.Destroy(); (?)
-             * 
-             */
+            //Destroy bomb after Animation is finished playing.
+            bombSound.PlayDelayed(0.6f);
+            Destroy(other.gameObject, timeBeforeDestroy);
         }
 
     }

@@ -34,7 +34,7 @@ public class Attack : MonoBehaviour
     void Update()
     {
         //Melee attack
-        if(!isMonkey)
+        if (!isMonkey)
         {
             if (Input.GetButtonDown("Fire1") && canAttack)
             {
@@ -44,22 +44,30 @@ public class Attack : MonoBehaviour
                 StartCoroutine(AttackCooldown());
             }
         }
+        else if(isMonkey)
+        {
+             if (Input.GetButtonDown("Fire1") && canAttack)
+            {
+                canAttack = false;
+                animator.SetBool("IsAttacking", true);
+                StartCoroutine(AttackCooldown());
+                GameObject throwableWeapon = Instantiate(throwableObject, transform.position + new Vector3(transform.localScale.x * 0.5f, -0.2f), Quaternion.identity) as GameObject;
+                Vector2 direction = new Vector2(transform.localScale.x, 0);
+                throwableWeapon.GetComponent<ThrowableWeapon>().direction = direction;
+                throwableWeapon.name = "ThrowableWeapon";
+                
+            }
+
+            if (Input.GetButtonDown("Bomb"))
+            {
+                GameObject bombWeapon = Instantiate(bombObject, transform.position, Quaternion.identity) as GameObject;
+                //Vector2 direction = new Vector2(0, 0);
+                // bombWeapon.GetComponent<ThrowableWeapon>().direction = direction;
+                bombWeapon.name = "Plant Bomb";
+                Debug.Log("Plant Bomb");
+            }
+        }
        
-        if (Input.GetButtonDown("Fire2") && isAlmostMonke)
-        {
-            GameObject throwableWeapon = Instantiate(throwableObject, transform.position + new Vector3(transform.localScale.x * 0.5f, -0.2f), Quaternion.identity) as GameObject;
-            Vector2 direction = new Vector2(transform.localScale.x, 0);
-            throwableWeapon.GetComponent<ThrowableWeapon>().direction = direction;
-            throwableWeapon.name = "ThrowableWeapon";
-        }
-        if (Input.GetButtonDown("Bomb"))
-        {
-            GameObject bombWeapon = Instantiate(bombObject, transform.position, Quaternion.identity) as GameObject;
-            //Vector2 direction = new Vector2(0, 0);
-           // bombWeapon.GetComponent<ThrowableWeapon>().direction = direction;
-            bombWeapon.name = "ThrowableWeapon";
-            Debug.Log("Plant Bomb");
-        }
         
     }
 
@@ -102,7 +110,14 @@ public class Attack : MonoBehaviour
             Debug.Log("Banana 2 collided");
 
         }
+        else if (collision.gameObject.CompareTag("Banana 3"))
+        {
+            isMonkey = true;
+            Destroy(collision.gameObject);
 
+            Debug.Log("Banana 3 collided");
+
+        }
     }
 
 

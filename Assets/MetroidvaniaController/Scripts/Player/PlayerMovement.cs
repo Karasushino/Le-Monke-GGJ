@@ -88,6 +88,7 @@ public class PlayerMovement : MonoBehaviour {
 		else if(collision.gameObject.CompareTag("Banana 3"))
         {
 			GetComponent<Animator>().runtimeAnimatorController = Monke;
+
 		}
 	}
 

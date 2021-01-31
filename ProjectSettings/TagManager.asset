@@ -10,6 +10,7 @@ TagManager:
   - Banana 2
   - Banana 3
   - DestructibleObject
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Bomb
   - 
   - 
   - 

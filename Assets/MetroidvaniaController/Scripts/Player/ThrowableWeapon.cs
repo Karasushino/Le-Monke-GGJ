@@ -8,7 +8,8 @@ public class ThrowableWeapon : MonoBehaviour
 	public Vector2 direction;
 	public bool hasHit = false;
 	public float speed = 10f;
-	public float timeDestruction = 5.0f;
+    public float timeDestruction = 5.0f;
+    public AudioSource bananaSplash;
 
     // Start is called before the first frame update
     void Start()
@@ -19,21 +20,25 @@ public class ThrowableWeapon : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-		if ( !hasHit)
-		GetComponent<Rigidbody2D>().velocity = direction * speed;
+        if (!hasHit)
+            GetComponent<Rigidbody2D>().velocity = direction * speed;
+		
+			
 	}
 
 	void OnCollisionEnter2D(Collision2D collision)
 	{
-		if (collision.gameObject.tag == "Enemy")
-		{
-			collision.gameObject.SendMessage("ApplyDamage", Mathf.Sign(direction.x) * 2f);
-			Destroy(gameObject);
-		}
-		else if (collision.gameObject.tag != "Player")
-		{
-			Destroy(gameObject);
-		}
+        if (collision.gameObject.tag == "Enemy")
+        {
+            collision.gameObject.SendMessage("ApplyDamage", Mathf.Sign(direction.x) * 2f);
+            Destroy(gameObject);
+        }
+        else if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "Projectile")
+        {
+            bananaSplash.Play();
+            Destroy(gameObject,0.2f);
+        }
+  
 	}
 
 	IEnumerator GetDestroyAfterTime(float time)
