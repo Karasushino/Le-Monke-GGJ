@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="BombTimer.cs" t="Include" />
         <e p="MetroidvaniaController" t="Include">
           <e p="Animation" t="Include">
             <e p="Scripts" t="Include">
@@ -35,6 +36,7 @@
             </e>
           </e>
         </e>
+        <e p="PlayYeet.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="BombController.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />

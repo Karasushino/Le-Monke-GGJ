@@ -6,6 +6,7 @@ public class Attack : MonoBehaviour
 {
     public float dmgValue = 4;
     public GameObject throwableObject;
+    public GameObject bombObject;
     public Transform attackCheck;
     private Rigidbody2D m_Rigidbody2D;
     public Animator animator;
@@ -51,6 +52,15 @@ public class Attack : MonoBehaviour
             throwableWeapon.GetComponent<ThrowableWeapon>().direction = direction;
             throwableWeapon.name = "ThrowableWeapon";
         }
+        if (Input.GetButtonDown("Bomb"))
+        {
+            GameObject bombWeapon = Instantiate(bombObject, transform.position, Quaternion.identity) as GameObject;
+            //Vector2 direction = new Vector2(0, 0);
+           // bombWeapon.GetComponent<ThrowableWeapon>().direction = direction;
+            bombWeapon.name = "ThrowableWeapon";
+            Debug.Log("Plant Bomb");
+        }
+        
     }
 
     IEnumerator AttackCooldown()
