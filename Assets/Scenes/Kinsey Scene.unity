@@ -274,6 +274,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 58517126}
     m_Modifications:
+    - target: {fileID: 6443342584086113101, guid: 843b47feb1ef2f445a40f0d94fdcd60a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6444152377124956571, guid: 843b47feb1ef2f445a40f0d94fdcd60a, type: 3}
       propertyPath: m_Name
       value: Police AI (2)
@@ -614,6 +618,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 58517126}
     m_Modifications:
+    - target: {fileID: 6443342584086113101, guid: 725c99634da03f94eb7c34cfb1fc0c58, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6444152377124956571, guid: 725c99634da03f94eb7c34cfb1fc0c58, type: 3}
       propertyPath: m_Name
       value: Bandit AI (3)
@@ -922,6 +930,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 58517126}
     m_Modifications:
+    - target: {fileID: 6443342584086113101, guid: 725c99634da03f94eb7c34cfb1fc0c58, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6444152377124956571, guid: 725c99634da03f94eb7c34cfb1fc0c58, type: 3}
       propertyPath: m_Name
       value: Bandit AI
@@ -2093,6 +2105,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 58517126}
     m_Modifications:
+    - target: {fileID: 6443342584086113101, guid: 725c99634da03f94eb7c34cfb1fc0c58, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6444152377124956571, guid: 725c99634da03f94eb7c34cfb1fc0c58, type: 3}
       propertyPath: m_Name
       value: Bandit AI (2)
@@ -33487,6 +33503,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 58517126}
     m_Modifications:
+    - target: {fileID: 6443342584086113101, guid: 843b47feb1ef2f445a40f0d94fdcd60a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6444152377124956571, guid: 843b47feb1ef2f445a40f0d94fdcd60a, type: 3}
       propertyPath: m_Name
       value: Police AI
@@ -34450,6 +34470,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 58517126}
     m_Modifications:
+    - target: {fileID: 6443342584086113101, guid: 843b47feb1ef2f445a40f0d94fdcd60a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6444152377124956571, guid: 843b47feb1ef2f445a40f0d94fdcd60a, type: 3}
       propertyPath: m_Name
       value: Police AI (1)
@@ -35489,7 +35513,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -3
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -41267,6 +41291,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 58517126}
     m_Modifications:
+    - target: {fileID: 6443342584086113101, guid: 725c99634da03f94eb7c34cfb1fc0c58, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6444152377124956571, guid: 725c99634da03f94eb7c34cfb1fc0c58, type: 3}
       propertyPath: m_Name
       value: Bandit AI (1)
