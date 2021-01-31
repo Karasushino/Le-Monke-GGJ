@@ -1872,7 +1872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3116463050633195019, guid: 5bc6074db4158a0458f738e0d566987a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.77
+      value: 6.2
       objectReference: {fileID: 0}
     - target: {fileID: 3116463050633195019, guid: 5bc6074db4158a0458f738e0d566987a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1913,6 +1913,10 @@ PrefabInstance:
     - target: {fileID: 3116463050633195022, guid: 5bc6074db4158a0458f738e0d566987a, type: 3}
       propertyPath: m_Name
       value: Banana Full Monke
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116463050633195022, guid: 5bc6074db4158a0458f738e0d566987a, type: 3}
+      propertyPath: m_TagString
+      value: Banana 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc6074db4158a0458f738e0d566987a, type: 3}
@@ -2087,6 +2091,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114145887554720856, guid: 50936cccdb69523458c1b42052ebafff, type: 3}
+      propertyPath: Monke
+      value: 
+      objectReference: {fileID: 22100000, guid: b9da360b7a88cbd4880bced0be92b47c, type: 2}
     - target: {fileID: 114435281327171648, guid: 50936cccdb69523458c1b42052ebafff, type: 3}
       propertyPath: cam
       value: 
@@ -2658,7 +2666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3116463050633195019, guid: 5bc6074db4158a0458f738e0d566987a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.77
+      value: 3.77
       objectReference: {fileID: 0}
     - target: {fileID: 3116463050633195019, guid: 5bc6074db4158a0458f738e0d566987a, type: 3}
       propertyPath: m_LocalPosition.y

@@ -18,7 +18,7 @@ public class PlayYeet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (originalPosition.x < gameObject.transform.position.x + 1.0f)
+        if (originalPosition.x + 1.0f < gameObject.transform.position.x )
         {
             if(!_playOnce)
             {

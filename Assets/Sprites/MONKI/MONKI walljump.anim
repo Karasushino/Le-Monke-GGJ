@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AlmostMonke WallJump
+  m_Name: MONKI walljump
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -39,12 +39,14 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 5215458567944327767, guid: dd2f1c3615c987742995e3dbc11fc2d0, type: 3}
+      value: {fileID: 2405419507699197665, guid: f06517acd1b8cd2408e0ce4bdc6addb6, type: 3}
+    - time: 0.2
+      value: {fileID: 2405419507699197665, guid: f06517acd1b8cd2408e0ce4bdc6addb6, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 1
+  m_SampleRate: 5
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -66,13 +68,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 5215458567944327767, guid: dd2f1c3615c987742995e3dbc11fc2d0, type: 3}
+    - {fileID: 2405419507699197665, guid: f06517acd1b8cd2408e0ce4bdc6addb6, type: 3}
+    - {fileID: 2405419507699197665, guid: f06517acd1b8cd2408e0ce4bdc6addb6, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 0.4
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

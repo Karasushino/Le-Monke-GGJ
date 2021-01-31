@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour {
 	public CharacterController2D controller;
 	public AnimatorOverrideController Caveman;
 	public AnimatorOverrideController AlmostMonke;
+	public AnimatorOverrideController Monke;
 
 
 	public Animator animator;
@@ -83,6 +84,10 @@ public class PlayerMovement : MonoBehaviour {
         {
 			GetComponent<Animator>().runtimeAnimatorController = AlmostMonke;
 			CharacterController2D.isHairy = true;
+		}
+		else if(collision.gameObject.CompareTag("Banana 3"))
+        {
+			GetComponent<Animator>().runtimeAnimatorController = Monke;
 		}
 	}
 
