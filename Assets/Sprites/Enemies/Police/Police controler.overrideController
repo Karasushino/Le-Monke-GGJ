@@ -8,4 +8,12 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Police controler
   m_Controller: {fileID: 9100000, guid: 2f1ff9a0da7f4884e873d2da75c95f93, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ef7619b3744300d4d93f035bedfe6284, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: dc629cd272c6d764b83101deac4f3a18, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0b269e747dd049e4a8e96942e43faeb4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: bb64911313433e247b83d6e48a81fff5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4132be06d7be6f6488fe20a815191d76, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ad09da32ad423644da003148559bf5f1, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 195ef856b0402fe4c994096fcde2bc04, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1b15f3e0c6f578e419ebbd0a7baf2f07, type: 2}
