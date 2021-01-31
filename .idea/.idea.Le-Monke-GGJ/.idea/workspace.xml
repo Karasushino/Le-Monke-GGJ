@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea6a66d7-83dd-40dc-970f-778e6ae66c86" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Le-Monke-GGJ/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Le-Monke-GGJ/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Le-Monke-GGJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Le-Monke-GGJ/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dani scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dani scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +20,7 @@
       <option value="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/Attack.cs" />
       <option value="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/ThrowableWeapon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BombController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nkzVzSV3BsMLh6rJiQMpmsyaJN" />
@@ -28,6 +30,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -68,6 +71,10 @@
       <option name="presentableId" value="Default" />
       <updated>1611948933523</updated>
       <workItem from="1611948955669" duration="2009000" />
+      <workItem from="1612038408309" duration="104000" />
+      <workItem from="1612038545302" duration="289000" />
+      <workItem from="1612095051699" duration="14000" />
+      <workItem from="1612095603131" duration="33000" />
     </task>
     <servers />
   </component>

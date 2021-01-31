@@ -36,13 +36,20 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="BombController.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
         </e>
         <e p="Tiles" t="Include">
+          <e p="Multi_Platformer_Tileset" t="Include">
+            <e p="Multi_Platformer_Tileset_v2" t="Include">
+              <e p="ReadMe.txt" t="Include" />
+            </e>
+          </e>
           <e p="warped city files" t="Include">
             <e p="public-license.txt" t="Include" />
           </e>
         </e>
+        <e p="TooltipsCaveman.cs" t="Include" />
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">
             <e p="Editor" t="Include">
